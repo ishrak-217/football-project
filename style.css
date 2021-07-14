@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #2D25A0;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.banner-description{
+    margin-top: 100px;
+    margin-left: 156px;
+    margin-right: 50px;
+}
+.banner-description h1{
+    font-size: 3em;
+    padding-bottom: 20px;
+    color: white;
+}
+.banner-description a{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+}
+.banner-description p a:hover{
+    width: 200px;
+    transition: width 2s;
+}
+.banner-image{
+    margin-top: 100px;
+    margin-right: 140px;
+    margin-bottom: 80px;
+
+}
+.banner-image img{
+    width: 556px;
+    height: 438px;
+    transition: transform 2s;
+}
+.banner-image img:hover{
+    transform: rotate(20deg);
+}
+
+section{
+    margin: 60px 200px 100px;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+}
+.player{
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+}
+.player-information{
+    width: 50%;
+    padding-top: 100px;
+    padding-right: 40px;
+}
+.player-information a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+}
+.player-image img{
+    height: 427px;
+    width: 567px;
+}
+
+.section1{
+    width: 60%;
+}
+.section2{
+    width: 40%;
+    margin-left: 50x;
+}
+.extra-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.more{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.more ul li{
+    list-style: none;
+}
+.more ul li a{
+    text-decoration: none;
+    color: black;
+}
+.form input{
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.055);
+}
+.form button{
+    padding: 10px 25px;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: rgb(96, 167, 248);
+}
+footer{
+    margin-bottom: 100px;
+}
+.football{
+    text-align: center;
+}
+.social-media{
+    text-align: center;
+}
+.football img{
+    width: 480px;
+    height: 100px;
+}
+.social-media span{
+    padding: 10px;
+}
+
+@media only screen and (max-width:668px) {
+    .body{
+        margin: 0;
+    }
+    .banner-description h1{
+        font-size: 30px;
+        color: white;
+    }
+    .banner-description{
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .banner-image{
+        margin-top: 50px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    
+    }
+    .banner-image img{
+        width: 329px;
+        height: 259px;
+    }
+
+    section{
+        margin: 0 auto;      
+    }
+    .all-players{
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 10px;
+    }
+    .player{
+        margin: 15px;
+    }
+    .player-image img{
+        height: 248px;
+        width: 328px;
+        margin: 10px;
+    }
+    .player-information{
+        padding-bottom: 40px;
+    }
+    .information{
+        flex-wrap: wrap;
+    }
+    .extra-section{
+        flex-wrap: wrap;
+    }
+    .more{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section2{
+        margin-right: 250px;
+    }
+    .football img{
+        margin-top: 30px;
+        width: 275px;
+        height: 65px;
+    }
+}
